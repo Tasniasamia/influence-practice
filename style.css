@@ -94,14 +94,17 @@ box-shadow: 0;
     margin-left:10px;
 }
 .camera-img{
-    background: radial-gradient(#f7f0ff 50%, #FFFFFF 50% );/*for create  background*/
-    border:4px solid #f7f0ff;
-    border-radius: 90%;/*for round background*/
-    height: 500px;
+       
+    background-image: url('images/Circle design.svg');
+    background-size: cover;
+  background-position: center;
+ 
+  background-repeat: no-repeat;
+}
+.camera-img img{
     display: flex;
-    justify-content: center;/*to take image in center*/
-    padding:5px;
-
+ justify-content: center;
+    
 }
 /*camera-end*/
 .logos{
@@ -306,16 +309,17 @@ align-items: center;justify-content: center;
     .navbar-part{
         margin-top: 3%;
     }
-    .camera-img{
-      background: none;
-      border: none;
-    }
+   
     .items{
         grid-template-columns: repeat(1,1fr);
         column-gap: 20px;
     }
     .feature{
         flex-direction: column-reverse;
+    }
+    
+    .feature-img img{
+        width: 100%;
     }
     .logos{
         flex-direction: column;
@@ -324,6 +328,18 @@ align-items: center;justify-content: center;
     }
     .camera-txt{
         width:100%;
+    }
+    .camera-img img{
+        width: 100%;
+    }
+    .camera-txt h2 {
+       
+        font-size: 33px;
+        line-height: 46px;
+        
+    }
+    .camera-txt p {
+        font-size: 15px;
     }
 }
 @media screen and (min-width:577px) and (max-width:992px){
@@ -345,8 +361,14 @@ align-items: center;justify-content: center;
     }
     .feature{
         flex-direction: column-reverse;
+        width: 100%;
     }
     .feature-txt{
         text-align: center;
     }
+    .camera-img img{
+        width:100%;
+       
+    }
+    
 }
